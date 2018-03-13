@@ -1,0 +1,36 @@
+body {
+    /* background-image: url("https://wallpaperstudio10.com/static/wpdb/wallpapers/3840x2160/170048.jpg"); 
+    background-image: url("https://i.pinimg.com/originals/61/3a/ed/613aedb8874ae74548b3db57f72b1d1b.png"); */
+    background-color:rgb(50,90,110);
+    font-size: 30px;
+}
+
+.table {
+    margin: 100px;
+    background: rgb(50, 90, 110);
+    color: beige;
+}
+textarea {
+    margin: 0 auto;
+    height: 200px;
+    width: 300px;
+}
+button{
+    background-color: rgb(200,160,140);
+    margin: 0 auto;
+    height: 60px;
+    width: 140px;
+}
+h1{
+    background-color: beige;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+pre,h2{
+    background-color:rgb(100,140,160)
+}
+ul,li{
+    background-color:beige;
+}

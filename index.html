@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href = "assets/style.css">
+    <title>Firebase Practice</title>
+</head>
+<body>
+
+
+
+  <div class="mainDiv" align="center">
+    <h1 align="left">Firebase Web App</h1>
+    <br>
+    <input id="mainText" placeholder="enter text here..."/>
+    <button id="submitBtn" onclick="submitClick()">submit</button>
+  </div>
+<h1>parents:</h1>
+  <h1 id="momDisp"></h1>
+  <h1 id="dadDisp"></h1>
+
+  <h2>kids:</h2>
+  <pre id="object"></pre>
+
+  <ul id="list">Parental Qualities:
+
+  </ul>
+
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyA_oFmNvMjeV3CD24tnFPGiAFWC-J6t1BI",
+        authDomain: "fir-practice-406cc.firebaseapp.com",
+        databaseURL: "https://fir-practice-406cc.firebaseio.com",
+        projectId: "fir-practice-406cc",
+        storageBucket: "fir-practice-406cc.appspot.com",
+        messagingSenderId: "385687265563"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="assets/app.js">
+    </script>
+    <!-- <div class="container">
+        <div class= "row">
+            <div class ="col-3">
+            </div>
+
+
+            <div class = "col">
+
+            <table class="table">
+                    <caption>List of users</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                  <div class = "col-3">
+
+                  </div>
+                </div>
+    </div> -->
+    
+</body>
+</html>
