@@ -15,7 +15,7 @@ textarea {
     height: 200px;
     width: 300px;
 }
-button{
+#submitBtn{
     background-color: rgb(200,160,140);
     margin: 0 auto;
     height: 60px;
@@ -33,4 +33,7 @@ pre,h2{
 }
 ul,li{
     background-color:beige;
+}
+button.hide {
+    display: none;
 }

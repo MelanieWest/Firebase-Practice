@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Firebase Auth</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class = "nav">
+        <input id="txtEmail" type="email" placeholder="your email">
+        <input id="txtPassword" type="password" placeholder="your password">
+
+        <button id="btnLogin" class= "btn btn-action">log in</button>
+
+        <button id="btnSignUp" class= "btn btn-secondary">sign up</button>
+        <button id="btnLogout" class = "btn btn-action hide">log out</button>
+
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script src="assets/firelink.js"></script>
+    <script src="assets/login.js"></script>
+</body>
+</html>

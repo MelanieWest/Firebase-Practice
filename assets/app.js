@@ -1,5 +1,6 @@
 //console.log("We are here!");
 
+
 //this element will be used to display data
 const momDisp = document.getElementById("momDisp");
 const dadDisp = document.getElementById("dadDisp");
@@ -65,7 +66,12 @@ function submitClick(){
     
     var firebaseRef = firebase.database().ref();
 
-    firebaseRef.child("kids").child(count).set(mainText.value);
+    //this next line created entries under 'kids' with a key value equal to the count.
+    //every time the program refreshes the numbered values can be overwritten, since count resets.
+  //  firebaseRef.child("kids").child(count).set(mainText.value);
+
+  //this next line will create entries under 'kids' with unique key values each time so nothing will overwrite
+    firebaseRef.child("kids").push().set(mainText.value);
     mainText.value = " ";
     count++;
 
